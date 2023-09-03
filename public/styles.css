@@ -1,0 +1,108 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    color: wheat;
+}
+
+/* cursor  */
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+@keyframes typing{
+    from {width: 0;}
+}
+
+.row
+{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 50%;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+.fp-entity
+{
+    margin: 15px;
+    width: 30vh;
+    
+}
+.cont
+{
+    display: inline;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    
+}
+.hello
+{
+    animation: 
+    typing 5s steps(31)
+    cursor 1s step-end infinite alternate;
+}
+#change
+{
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: 40%;
+}
+.img
+{
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    height: 50vh;
+    width: 50vh;
+}
+
+/* first js ki styling  */
+.container-project
+{
+    /* display: flex; */
+    /* flex-direction: row; */
+    position: absolute;
+    top: 40%;
+    position: absolute;
+}
+
+/* project header division */
+
+.proj-header
+{
+    border: 2px solid red;
+    height: 150px;
+    width: 100%;
+}
+.proj-content
+{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    height: 400px;
+    width: 100%;
+}
+.pc
+{
+    /* background-image: url("images/MY_IMG.jpeg"); */
+    /* background-size: 100%; */
+    margin: 10px 10px;
+    /* height: 100px;*/
+    width: 40vh; 
+    border: 2px solid orange;
+}
+.items
+{
+    height: 200px;
+    width: 200px;
+}

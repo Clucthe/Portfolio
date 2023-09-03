@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-color: black;
+    color: lightblue;
+    font-family: 'Lilita One', cursive;
+}
+.header
+{
+    /* border: 2px solid red; */
+    font-size: 4rem;
+    padding-left: 40%;
+    margin-top: 15px;
+}
+.content
+{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    
+}
+.pros
+{
+    border: 2px solid black;
+}
+
+/* slider */
+.body1
+{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 100vh;
+    /* background-color: lawngreen; */
+    /* border: 2px solid yellow; */
+    padding: 0 35px;
+}
+.card img
+{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+.content
+{
+    max-width: 1200px;
+    width: 100%;
+    /* position: relative; */
+    /* border: 2px solid red; */
+}
+.content .content-inner
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    gap: 15px;
+    /* overflow: hidden; */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+    
+}
+.content .card
+{
+    list-style: none;
+    background-color: lightblue;
+    color: black;
+    border-radius: 10px;
+    height: 342px;
+     display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    cursor: pointer;
+    width: 280px;
+    
+}
+.content i
+{
+    height: 30px;
+    width: 50px;
+    margin: 10px;
+    background-color: wheat;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.card-item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding-top: 5px;
+}
+.card-item h4
+{
+    margin-bottom: 4px;
+}
+
+
+
+@media screen and (max-width : 600px) {
+    .content .content-inner{
+        grid-auto-columns: 100%;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="feed.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            Hey! <%=user%>
+        </h1>
+        <span id="change">
+            <!-- Let me know how your experience... -->
+        </span>
+    </div>
+    <div class="container">
+        <div class="fb-form">
+            <form action="/feedback" method="post">
+                <div class="e f">
+                    <label for="mailid">YOUR EMAIL : </label>
+                    <input type="email" name="mailid">
+        
+                </div>
+               <div class="r f">
+                <label for="rangebar">RATE YOUR EXPERIENCE : </label>
+                <input type="range" name="rangebar" class="range-bar" min="0" max="5" step="1">
+               </div>
+               <div class="rev f">
+                <label for="review">ANYTHING..I'LL READ SURELY ! </label>
+                <textarea id="rev" name="review" rows="4" cols="50"></textarea>
+               </div>
+                <input type="submit" class="sub-btn">
+            </form>
+        </div>
+       <img src="images/pop.gif" alt="gif">
+    </div>
+   
+    <script src="feed.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-color: black;
+    /* background-image: url("./IMAGES/bg.webp"); */
+    color: lightblue;
+    font-family: 'Lilita One', cursive;
+}
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* border: 2px solid red; */
+    height: 50px;
+    position: sticky;
+    
+}
+.navbar li
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    position: relative;
+    left: 2.5%;
+    top: 12px;
+    /* border: 2px solid orange; */
+}
+ .navbar li ul
+{
+    margin-right: 40px;
+    width: 80px;
+    /* border: 2px solid pink; */
+}
+.navbar li ul a
+{
+    text-decoration: none;
+    color: lightblue;
+}
+.logo-img
+{
+    width: 200px;
+    position: relative;
+    left: 15%;
+    /* border: 2px solid blue; */
+    background-image: url("./IMAGES/LOGO.jpg");
+    background-position: center;
+    background-size: 210px;
+    background-repeat: no-repeat;
+    top: 10px;
+    height: 40px;
+}
+.navbar input
+{
+    position: relative;
+    left: 40%;
+    height: 30px;
+    top: 20px;
+    width: 205px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+
+/* navabar  ending*/
+
+/* body starts */
+.container
+{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    position: relative;
+    top: 50px;
+    /* height: 600px; */
+    width: 100%;
+    /* border: 2px solid green; */
+}
+.cont-left
+{
+    /* height: 100; */
+    width: 45%;
+    position: relative;
+    left: 5%;
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: column;
+}
+
+.extras
+{
+    width: 100%;
+    height: 100px;
+    /* border: 2px solid red; */
+    position: relative;
+    top: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* right side of the content page divison */
+.cont-right
+{
+    /* height: 100%; */
+    width: 30%;
+    position: relative;
+    left: 11%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.cont-right-img
+{
+   background-image: url("images/myimg.png");
+   background-size: 90%;
+   background-repeat: no-repeat;
+   border: 2px solid black;
+   height: 500px;
+   width: 500px;
+   position: relative;
+   top: 10%;
+   left: 3%;
+   border-radius: 50%;
+}
+.cont-right-text
+{
+    height: 150px;
+    width: 50%;
+    /* border: 2px solid red; */
+    position: relative;
+    top: 5px;
+    left: 20%;
+}
+/* end of the right sde division of the container */
+
+.cont-left-up
+{
+    position: relative;
+    top: 15%;
+   font-size: 4rem;
+    /* border: 2px solid black; */
+}
+
+.cont-left-down
+{
+    position: relative;
+    top: 20%;
+    font-size: 1.3rem;
+    /* border: 2px solid brown; */
+}
+.resume
+{
+    position: relative;
+    top: 35%;
+    left: 3%;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+.connect
+{
+    position: relative;
+    top: 30%;
+    left: 20%;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: palegreen;
+}
+
+.duck
+{
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid seagreen; */
+}
+.d
+{
+    background-image: url('images/XOsX.gif');
+    background-size: 100%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+/* footer begins here */
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 1%;
+    height: 40px;
+    width: 100%;
+    /* border: 2px solid purple; */
+}
+.github
+{
+
+}
+.github a
+{
+    text-decoration: none;
+}
+.linkedin
+{
+
+}
+.linkedin a
+{
+    text-decoration: none;
+}
+.instagram
+{
+
+}
+.instagram a
+{
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .cont-right-img{
+        height: 250px;
+        width: 250px;
+        left: 95%;
+    }
+    .navbar input{
+        width: 205px;
+        left: 18%;
+    }
+    .footer{
+        bottom: -150%;
+    }
+    .cont-left-up{
+        font-size: 2rem;
+    }
+    .connect{
+        top: 40%;
+        left: 3%;
+    }
+
+}
